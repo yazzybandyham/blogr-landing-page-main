@@ -1,7 +1,7 @@
-// Toggles menu burger
 const menuBtn = document.querySelector('.nav-toggle-burger');
 let menuOpen = false;
 
+// Toggles menu burger
 menuBtn.addEventListener('click', () => {
   if(!menuOpen) {
     menuBtn.classList.add('open');

@@ -39,6 +39,7 @@ Reset Styles
 html, body {
     max-height: 100%;
     max-width: 100%;
+    overflow-x: hidden;
  }
   
 body {
@@ -232,6 +233,21 @@ nav > ul > li > a:hover {
     transform: translateY(6px);
 }
 
+/* burger animation  */
+.open .nav__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.open .nav__burger::before {
+    transform: rotate(47deg) translate(35px, -35px);
+}
+
+.open .nav__burger::after {
+    transform: rotate(-46deg) translate(35px, 35px);
+}
+
 /* Menu Drop down of Sub Menu */
 .nav__listitem > a {
     display: flex;
@@ -257,21 +273,13 @@ nav > ul > li > a:hover {
     position: relative;
 }
 
-
-/*ANIMATION */
-.open .nav__burger {
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
+nav .nav__list li img {
+    transition: 0.5s;
+}
+nav .nav__list li:hover img {
+    transform: rotate(-180deg);
 }
 
-.open .nav__burger::before {
-    transform: rotate(47deg) translate(35px, -35px);
-}
-
-.open .nav__burger::after {
-    transform: rotate(-46deg) translate(35px, 35px);
-}
 /*
 ================== 
 Nav Button Section
@@ -509,10 +517,14 @@ Media Queries Section
 */
 
 /* NAV */
+@media screen and (min-width: 426px) {
+    nav {
+        left: 15%;
+    }
+}
 
 @media screen and (min-width: 768px) {
     nav {
-        top: 15%;
         left: 50%;
     }
 }
@@ -556,6 +568,7 @@ Media Queries Section
     nav > ul > li > a {
         color: var(--text);
         padding-right: 1rem;
+        display: block;
     }
     nav > ul > li > a:hover {
         color: var(--text);
@@ -568,9 +581,6 @@ Media Queries Section
     }
     .light-arrow {
         visibility: visible;
-    }
-    .light-arrow:hover {
-        transform: scaleX(-1);
     }
     .dark-arrow {
         display: none;
