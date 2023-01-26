@@ -46,7 +46,6 @@ Screenshot of my solution:
 
 - Semantic HTML5 markup
 - CSS
-- BEM methodology for naming CSS classes
 - Flexbox
 - JavaScript
 - Mobile-first workflow
