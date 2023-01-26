@@ -69,8 +69,8 @@ In the future, I want to keep researching pseudo elements to learn more about th
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yazzybandyham)
-- Twitter - [@yourusername](https://www.twitter.com/yazzybandyham)
+- Frontend Mentor - [@yazzybandyham](https://www.frontendmentor.io/profile/yazzybandyham)
+- Twitter - [@yazzybandyham](https://www.twitter.com/yazzybandyham)
 
 
 
